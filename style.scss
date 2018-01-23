@@ -4,12 +4,22 @@
   flex-direction: row;
 }
 
+.flex-h-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .flex-v {
   display: flex;
   flex-direction: column;
 }
 
-.flex-wrap{
+.flex-v-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
 }
 
@@ -17,13 +27,32 @@
   flex: 1;
 }
 
-.flex-v-center {
-  justify-content: center;
+// h
+.flex-h-start {
+  justify-content: flex-start;
 }
 
 .flex-h-center {
+  justify-content: center;
+}
+
+.flex-h-end {
+  justify-content: flex-end;
+}
+
+// v
+.flex-v-start {
+  align-items: flex-start;
+}
+
+.flex-v-center {
   align-items: center;
 }
+
+.flex-v-end {
+  align-items: flex-end;
+}
+
 
 .flex-v-space-around {
   justify-content: space-around;
@@ -32,7 +61,6 @@
 .flex-v-space-between {
   justify-content: space-between;
 }
-
 
 // parts
 .card {
@@ -55,7 +83,6 @@
   }
 }
 
-
 // text
 .text-center {
   text-align: center;
@@ -64,7 +91,6 @@
 .text-right {
   text-align: right;
 }
-
 
 // size
 .width--5 {
